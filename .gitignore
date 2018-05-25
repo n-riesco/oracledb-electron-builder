@@ -1,0 +1,6 @@
+*.sw?
+misc/
+node_modules/
+release/
+.ropeproject/
+npm-debug.log

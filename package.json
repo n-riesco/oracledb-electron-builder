@@ -1,0 +1,65 @@
+{
+  "name": "oracledb-electron-builder",
+  "version": "1.0.0",
+  "description": "Example of electron app using oracledb and electron-builder",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/n-riesco/oracledb-electron-rebuild.git"
+  },
+  "build": {
+    "appId": "net.nicolasriesco.oracledb-electron-builder",
+    "productName": "OracleDB Example App",
+    "linux": {
+      "category": "Database",
+      "desktop": {
+        "Comment": "OracleDB Example App for Windows, Mac and Linux",
+        "Exec": "oracledb-example-app",
+        "Name": "OracleDB Example App",
+        "StartupNotify": "true",
+        "Terminal": "false",
+        "Type": "Application",
+        "Categories": "Database;Office;"
+      },
+      "executableName": "oracledb-example-app",
+      "maintainer": "enquiries@nicolasriesco.net",
+      "target": [
+        "AppImage"
+      ]
+    },
+    "mac": {
+      "category": "public.app-category.tools",
+      "target": [
+        "dmg"
+      ]
+    },
+    "win": {
+      "asar": false,
+      "target": [
+        "nsis"
+      ]
+    },
+    "directories": {
+      "output": "release"
+    }
+  },
+  "scripts": {
+    "start": "electron index.js",
+    "postinstall": "electron-builder install-app-deps",
+    "pack": "electron-builder --publish=never",
+    "test": "npm start"
+  },
+  "author": {
+    "author": "Nicolas Riesco",
+    "email": "enquiries@nicolasriesco.net",
+    "url": "http://www.nicolasriesco.net/"
+  },
+  "license": "Apache-2.0",
+  "dependencies": {
+    "oracledb": "https://github.com/oracle/node-oracledb/releases/download/v2.2.0/oracledb-src-2.2.0.tgz"
+  },
+  "devDependencies": {
+    "electron": "^2.0.2",
+    "electron-builder": "^20.14.7"
+  }
+}
