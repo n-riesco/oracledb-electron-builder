@@ -33,7 +33,7 @@ postinstall step (as defined in `package.json`).
 # Run
 
 ```
-nmp start
+npm start
 ```
 
 
