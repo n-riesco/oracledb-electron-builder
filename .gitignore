@@ -1,6 +1,7 @@
 *.sw?
 misc/
 node_modules/
+notes/
 release/
 .ropeproject/
 npm-debug.log
