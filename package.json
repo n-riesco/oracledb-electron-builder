@@ -14,7 +14,6 @@
       "category": "Database",
       "desktop": {
         "Comment": "OracleDB Example App for Windows, Mac and Linux",
-        "Exec": "oracledb-example-app",
         "Name": "OracleDB Example App",
         "StartupNotify": "true",
         "Terminal": "false",
